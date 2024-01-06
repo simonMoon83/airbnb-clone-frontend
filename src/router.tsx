@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./components/Root";
+import KakaoConfirm from "./routes/KakaoConfirm";
 import GithubConfirm from "./routes/GithubConfirm";
 import Home from "./routes/Home";
 import NotFound from "./routes/NotFound";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             path: "github",
             element: <GithubConfirm />,
           },
+          {
+            path: "kakao",
+            element: <KakaoConfirm />,
+          },          
         ],
       },      
     ],
